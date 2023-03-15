@@ -23,7 +23,7 @@ const AboutMe = () => {
         </p>
         <a href={Pdf} download={"CV - Roberto Núñez Casaux"} className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl">Download CV</a>
       </div>
-      <img src={ProgrammerImg} alt="Programmer Photo" className="h-4/6 w-4/6 hidden m-auto md:inline" />
+      <img src={ProgrammerImg} alt="Programmer Photo" className="h-80 w-80 hidden m-auto object-cover md:inline rounded-full" />
     </div>
   );
 };
