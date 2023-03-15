@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridAutoFlow: {
+        'dense': 'dense',
+      },
+    },
+  },
+  variants: {
+    gridAutoFlow: ['responsive'],
   },
   plugins: [],
 }

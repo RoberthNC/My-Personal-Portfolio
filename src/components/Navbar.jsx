@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
 import { useEffect, useState } from "react"
+
+import Menu from "../assets/icons/menu.svg"
 
 const Navbar = () => {
     const [ visibleMenu, setVisibleMenu ] = useState( false );
@@ -26,29 +28,13 @@ const Navbar = () => {
         <span className="text-[#ff8e00]">&#60;</span>Roberto Núñez Casaux <span className="text-orange-500">&#47;&#62;</span>
       </div>
       <button onClick={ hiddenNavbar } className="md:hidden">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-menu-2"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="#fff"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
+        <img src={Menu} alt="Menu bars" />
       </button>
       <div className={`flex flex-col items-center gap-1 md:visible ${ visibleMenu? "hidden" : "" } md:flex-row md:gap-4`}>
-        <Link to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">About me</Link>
-        <Link to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Skills</Link>
-        <Link to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Projects</Link>
-        <Link to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Contact me</Link>
+        <HashLink smooth to="/#about" className="text-lg text-white hover:text-[#ff8e00] font-bold">About me</HashLink>
+        <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Skills</HashLink>
+        <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Projects</HashLink>
+        <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Contact me</HashLink>
       </div>
     </div>
   );

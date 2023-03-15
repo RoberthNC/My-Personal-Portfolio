@@ -11,7 +11,7 @@ const Presentation = () => {
           strings: ['Front-End Developer','Back-End Developer','Full-Stack Developer'],
           typeSpeed: 100,
           backSpeed: 100,
-          loop: false,
+          loop: true,
           showCursor: false,
           smartBackspace: true,
           cursorChar: '|'
