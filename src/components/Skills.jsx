@@ -4,7 +4,7 @@ import Skill from "./Skill"
 const Skills = () => {
 
   return (
-    <div className="px-8 py-12">
+    <div className="px-8 py-12" id="skills">
       <h2 className="text-3xl font-bold">My skills</h2>
       <br />
       <div className="grid grid-cols-3 gap-5 md:px-28">

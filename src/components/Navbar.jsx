@@ -32,9 +32,9 @@ const Navbar = () => {
       </button>
       <div className={`flex flex-col items-center gap-1 md:visible ${ visibleMenu? "hidden" : "" } md:flex-row md:gap-4`}>
         <HashLink smooth to="/#about" className="text-lg text-white hover:text-[#ff8e00] font-bold">About me</HashLink>
-        <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Skills</HashLink>
+        <HashLink smooth to="/#skills" className="text-lg text-white hover:text-[#ff8e00] font-bold">Skills</HashLink>
         <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Projects</HashLink>
-        <HashLink smooth to="/" className="text-lg text-white hover:text-[#ff8e00] font-bold">Contact me</HashLink>
+        <HashLink smooth to="/#contact" className="text-lg text-white hover:text-[#ff8e00] font-bold">Contact me</HashLink>
       </div>
     </div>
   );
