@@ -29,7 +29,7 @@ const ContactMe = () => {
         }
 
         //Sending the email to my email
-        emailjs.sendForm('gmailMessage', 'template_qks9a24', form.current, 'dJjWkU7ywJcNe-ygn')
+        emailjs.sendForm("gmailMessage", "template_qks9a24", form.current, "dJjWkU7ywJcNe-ygn")
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
