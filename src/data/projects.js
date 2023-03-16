@@ -1,7 +1,7 @@
 import ReduxImg from "../assets/img/Redux CRUD.png"
 import CryptoImage from "../assets/img/Cryptocurrency React.png"
 import CustomerImage from "../assets/img/Customer Manager React.png"
-import WeatherConsoleImage from "../assets/img/Redux CRUD.png"
+import WeatherConsoleImage from "../assets/img/Weather Console App.png"
 import TodoList from "../assets/img/Todo List Console App.png"
 
 //Importing all the imagenes for each project

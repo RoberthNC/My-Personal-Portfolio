@@ -1,10 +1,19 @@
+import { useRef } from "react";
+
 const Project = ({project}) => {
+
+  const hasPage = useRef(true);
+
+  if( project.linkPage === "" ){
+    hasPage.current = false;
+  }
+
   return (
-    <div className="border-x-[1px] border-y-[1px] border-black px-2 py-2 flex flex-col rounded-xl w-4/6 md:flex-row m-auto justify-center items-center">
+    <div className="border-x-[1px] border-y-[1px] border-black px-2 py-2 flex flex-col rounded-xl w-5/6 m-auto justify-center items-center">
       <img
         src={project.img}
         alt=""
-        className="md:w-[40%] md:h-[40%] mb-2 m-auto"
+        className="md:w-[40%] md:h-[40%] mb-2 my-auto"
       />
       <div className="flex flex-col gap-3 m-auto">
         <h2 className="text-xl text-center">{project.title}</h2>
@@ -18,10 +27,10 @@ const Project = ({project}) => {
           ) ) }
         </div>
 
-        <div className="flex justify-evenly flex-wrap">
+        <div className="flex md:gap-5 gap-2 justify-center flex-wrap">
           <a
             href={project.linkPage}
-            className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 md:mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl"
+            className={`bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 md:mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl ${ !hasPage.current ? "hidden":"" }`}
             target="_blank"
           >
             View Page
