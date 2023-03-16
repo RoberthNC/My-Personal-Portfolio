@@ -7,7 +7,7 @@ const Projects = () => {
         <h2 className="text-3xl font-bold">My Projects</h2>
         <br /> <br />
         {/* Container of all projects */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
             {/* Component */}
             { projects.map( project => (
                 <Project key={project.title} project={project} />
