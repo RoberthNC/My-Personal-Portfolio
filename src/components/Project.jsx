@@ -16,7 +16,7 @@ const Project = ({project}) => {
         className="md:w-[40%] md:h-[40%] mb-2 my-auto"
       />
       <div className="flex flex-col gap-3 m-auto">
-        <h2 className="text-xl text-center">{project.title}</h2>
+        <h2 className="text-xl text-center font-bold">{project.title}</h2>
         <p>{project.description}</p>
         {/* There will be 1 or more Technologies that have been used in the project */}
         <div className="flex flex-row flex-wrap justify-center gap-3 mt-3">
