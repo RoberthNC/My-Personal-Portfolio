@@ -13,7 +13,7 @@ const projects = [
         title:"Redux CRUD",
         description:"Page made with React.js and Redux that allows you to perform CRUD operations.",
         stack:["React.js","Redux","CSS"],
-        linkPage:"http://google.com",
+        linkPage:"",
         linkRepository:"https://github.com/RoberthNC/Redux-CRUD"
     },
     {
@@ -21,7 +21,7 @@ const projects = [
         title:"Cryptocurrency Quote",
         description:"Page made with React.js and Styled Components, Fetch was also used to make requests to a Cryptocurrency API.",
         stack:["React.js","Styled Components","Fetch"],
-        linkPage:"http://google.com",
+        linkPage:"",
         linkRepository:"https://github.com/RoberthNC/Cotizador-Cryptomonedas-React"
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         title:"Customer Manager",
         description:"Project made with React.js and the latest version of React Router DOM, allows to perform CRUD operations with the Clients that are stored in the db.json file and have interactivity with the different pages.",
         stack:["React.js","React Router DOM","Tailwind CSS"],
-        linkPage:"http://google.com",
+        linkPage:"",
         linkRepository:"https://github.com/RoberthNC/Administrador-de-Clientes"
     },
     //Node.js Projects
