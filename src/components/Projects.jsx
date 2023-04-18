@@ -35,6 +35,7 @@ const Projects = () => {
 
         <div className="flex flex-row justify-center items-center gap-8 py-5">
           <BsChevronCompactLeft onClick={prevSlide} size={30} className="scale-[145%] rounded-full p-2 bg-black/20 text-white cursor-pointer" />
+          <p>{ currentIndex + 1 }</p>
           <BsChevronCompactRight onClick={nextSlide} size={30} className="scale-[145%] rounded-full p-2 bg-black/20 text-white cursor-pointer" />
         </div>
 
