@@ -37,7 +37,7 @@ const Project = ({project}) => {
           </a>
           <a
             href={project.linkRepository}
-            className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 md:mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl"
+            className="bg-[#ff8e00] text-white font-bold p-2 inline-block mt-5 md:mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-[5px]"
             target="_blank"
           >
             View Repository
