@@ -9,7 +9,7 @@ const Project = ({project}) => {
   }
 
   return (
-    <div className="border-x-[1px] border-y-[1px] border-black px-2 py-2 flex flex-col rounded-xl md:w-3/6 w-6/6 m-auto justify-center items-center shadow-md">
+    <div className="border-x-[1px] border-y-[1px] border-black px-2 py-2 flex flex-col rounded-xl md:w-3/6 w-6/6 m-auto justify-center items-center shadow-md duration-500">
       <img
         src={project.img}
         alt=""
