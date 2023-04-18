@@ -2,7 +2,6 @@ import { useState } from "react"
 import Project from "./Project"
 import projects from "../data/projects"
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs"
-import { RxDotFilled } from "react-icons/rx"
 
 const Projects = () => {
 
@@ -29,24 +28,16 @@ const Projects = () => {
         <h2 className="text-3xl font-bold">My Projects</h2>
         <br /> <br />
         {/* Container of all projects */}
-        <div className="flex flex-col gap-5 relative">
+        <div className="flex flex-col gap-5">
             {/* Component */}
             <Project key={projects[currentIndex].title} project={projects[currentIndex]}/>
-            <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white text-#000 cursor-pointer">
-              <BsChevronCompactLeft onClick={prevSlide} size={30} />
-            </div>
-
-            <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-              <BsChevronCompactRight onClick={nextSlide} size={30} />
-            </div>
-            <div className="flex top-4 justify-center py-2">
-              { projects.map((project, idx) => (
-                <div key={idx} onClick={()=>goToSlide(idx)} className="text-2xl cursor-pointer">
-                  <RxDotFilled />
-                </div>
-              ))}
-            </div>
         </div>
+
+        <div className="flex flex-row justify-center items-center gap-8 py-5">
+          <BsChevronCompactLeft onClick={prevSlide} size={30} className="scale-[145%] rounded-full p-2 bg-black/20 text-white cursor-pointer" />
+          <BsChevronCompactRight onClick={nextSlide} size={30} className="scale-[145%] rounded-full p-2 bg-black/20 text-white cursor-pointer" />
+        </div>
+
     </div>
   )
 }
