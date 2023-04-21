@@ -4,8 +4,8 @@ import Github from "../assets/icons/github.svg"
 import Html from "../assets/icons/html.svg"
 import Java from "../assets/icons/java.svg"
 import Javascript from "../assets/icons/javascript.svg"
-import Laravel from "../assets/icons/laravel.svg"
 import Mysql from "../assets/icons/mysql.svg"
+import NextJs from "../assets/icons/nextjs.svg"
 import Nodejs from "../assets/icons/nodejs.svg"
 import Php from "../assets/icons/php.svg"
 import Python from "../assets/icons/python.svg"
@@ -39,12 +39,12 @@ const languagesInformation = [
         logo:Javascript
     },
     {
-        name:"Laravel",
-        logo:Laravel
-    },
-    {
         name:"MySQL",
         logo:Mysql
+    },
+    {
+        name:"Next.js",
+        logo:NextJs
     },
     {
         name:"Node.js",

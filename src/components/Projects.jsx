@@ -19,10 +19,6 @@ const Projects = () => {
     setCurrentIndex(newIndex);
   }
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  }
-
   return (
     <div id="projects" className="px-8 py-12">
         <h2 className="text-3xl font-bold">My Projects</h2>
