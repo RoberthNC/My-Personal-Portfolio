@@ -1,3 +1,4 @@
+import GuitarLA from "../assets/img/GuitarLA NextJs.png"
 import ReduxImg from "../assets/img/Redux CRUD.png"
 import CryptoImage from "../assets/img/Cryptocurrency React.png"
 import CustomerImage from "../assets/img/Customer Manager React.png"
@@ -7,7 +8,15 @@ import TodoList from "../assets/img/Todo List Console App.png"
 //Importing all the imagenes for each project
 
 const projects = [
-    //React Projects
+    //React Projects    
+    {
+        img:GuitarLA,
+        title:"GuitarLA Next.js",
+        description:"Page made with Next.js on Front-End and Strapi as Back-End",
+        stack:["Next.js","Strapi","CSS","Fetch"],
+        linkPage:"",
+        linkRepository:"https://github.com/RoberthNC/GuitarLA-Nextjs"
+    },
     {
         img:ReduxImg,
         title:"Redux CRUD",
