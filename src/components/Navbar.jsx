@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col items-center gap-3 py-6 px-9 bg-[#2B3B45] md:flex-row justify-between">
-      <div className="animate-bounce font-bold text-xl text-white text-center border-b-2 md:border-none p-2">
+      <div className="font-bold text-xl text-white text-center border-b-2 md:border-none p-2">
         <span className="text-[#ff8e00]">&#60;</span>Roberto Núñez Casaux <span className="text-orange-500">&#47;&#62;</span>
       </div>
       <button onClick={ hiddenNavbar } className="md:hidden">
