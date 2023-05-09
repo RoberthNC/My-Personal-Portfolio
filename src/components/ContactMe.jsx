@@ -67,7 +67,7 @@ const ContactMe = () => {
                     <label className="text-white font-bold" htmlFor="message">Message</label>
                     <textarea id="message" name="message" placeholder="Type your message here" className="border-black border-x-[1px] border-y-[1px] rounded-[5px] px-1 py-3 h-40 resize-none" value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
                 </div>
-                <button type="submit" className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl">Send Email</button>
+                <button type="submit" className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl md:w-3/5 w-full mx-auto">Send Email</button>
             </form>
         </div>
   )
