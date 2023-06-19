@@ -1,4 +1,4 @@
-import Pdf from "../assets/pdf/Roberto Núñez - Curriculum Vitae.pdf"
+import Pdf from "../assets/pdf/Roberto Núñez - CV.pdf"
 import ProgrammerImg from "../assets/img/Programmer.jpg"
 
 const AboutMe = () => {
@@ -21,7 +21,7 @@ const AboutMe = () => {
           I am currently learning and perfecting my skills in the technologies
           to be able to carry out more robust works.
         </p>
-        <a href={Pdf} download={"CV - Roberto Núñez Casaux"} className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl">Download CV</a>
+        <a href={Pdf} download={"Roberto Núñez - CV"} className="bg-[#ff8e00] text-white font-bold p-4 inline-block mt-5 mb-5 transition duration-200 hover:scale-110 transition-delay-100 rounded-xl">Download CV</a>
       </div>
       <img src={ProgrammerImg} alt="Programmer Photo" className="h-80 w-80 hidden m-auto object-cover md:inline rounded-full" />
     </div>
